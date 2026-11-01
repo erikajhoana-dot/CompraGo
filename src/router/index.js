@@ -5,7 +5,6 @@ import CrearProductoView from "../views/CrearProductoView.vue"
 import EditarProductoView from "../views/EditarProductoView.vue"
 import InicioView from '../views/InicioView.vue'
 import ProductosView from "../views/ProductosView.vue"
-import { Component } from 'react'
 
 const routes = [
     {
@@ -14,27 +13,27 @@ const routes = [
     }, 
     {
         path: "/carrito",
-        Component: CarritoView
+        component: CarritoView
     }, 
     {
         path: "/crear-producto",
-        Component: CrearProductoView
+        component: CrearProductoView
     },
     {
         path: "/editar-producto",
-        Component: EditarProductoView
+        component: EditarProductoView
     },
     {
         path: "/inicio",
-        Component: InicioView
+        component: InicioView
     },
     {
         path: "/productos",
-        Component: ProductosView
+        component: ProductosView
     }
 ]
 
-const router = (
+const router = createRouter(
     {
         history: createWebHistory(import.meta.env.BASE_URL),
         routes
