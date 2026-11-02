@@ -6,7 +6,7 @@ import router from './router/index.js'
 import './style.css'
 
 
-const app = createApp(ProductosView)
+const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)

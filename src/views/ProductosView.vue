@@ -11,6 +11,7 @@ const productosStore = useProductosStore()
 
     <main>
         <h1>Productos</h1>
+        <RouterLink to="/crear-producto" class="btn-crear">Crear producto</RouterLink>
         <div id="contenedor-productos">
             <productCard 
                 v-for="producto in productosStore.obtenerProductos"

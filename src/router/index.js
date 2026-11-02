@@ -9,23 +9,19 @@ import ProductosView from "../views/ProductosView.vue"
 const routes = [
     {
         path: "/",
-        redirect: "/productos"
+        component: InicioView
     }, 
     {
         path: "/carrito",
         component: CarritoView
     }, 
     {
-        path: "/crear-producto",
+        path: "/productos/crear",
         component: CrearProductoView
     },
     {
-        path: "/editar-producto",
+        path: "/productos/:id",
         component: EditarProductoView
-    },
-    {
-        path: "/inicio",
-        component: InicioView
     },
     {
         path: "/productos",
