@@ -2,4 +2,5 @@
 </script>
 
 <template>
+    Hola desde menu
 </template>

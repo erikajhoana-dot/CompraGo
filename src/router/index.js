@@ -9,7 +9,7 @@ import ProductosView from "../views/ProductosView.vue"
 const routes = [
     {
         path: "/",
-        redirect: "/inicio"
+        redirect: "/productos"
     }, 
     {
         path: "/carrito",
