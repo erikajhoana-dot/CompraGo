@@ -14,6 +14,6 @@
 
         </div>
 
-        <img src="../assets/Designer.png" alt="Productos de nuestra tienda">
+        <img src="/public/imagenes/Designer.png" alt="Productos de nuestra tienda">
     </div>
 </template>
