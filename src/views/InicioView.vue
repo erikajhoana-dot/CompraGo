@@ -1,10 +1,19 @@
 <template>
     <div id="contenedor-menu">
         <div id="info-inicio">
-            <h1>Bienvenido</h1>
-            <p>Descubre nuestros productos y compra fácil y rápido</p>
-            <button>Ver productos</button>
+
+            <h1>Encuentra todo lo que necesitas en un solo lugar</h1>
+
+            <p>
+                Explora nuestro catálogo, descubre nuevos productos.
+            </p>
+
+            <RouterLink to="/productos">
+                Explorar productos 
+            </RouterLink>
+
         </div>
-        <img src="../assets/LOGO.png">
+
+        <img src="../assets/Designer.png" alt="Productos de nuestra tienda">
     </div>
 </template>

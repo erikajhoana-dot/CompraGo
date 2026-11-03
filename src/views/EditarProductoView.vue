@@ -10,7 +10,7 @@ const router = useRouter()
 
 const id = Number(route.params.id)
 
-const producto = productosStore.productos.find(producto => producto.id === id)
+const producto = productosStore.encontrarProducto(id)
 
 const nuevosDatos = ref({
     imagen: producto ? producto.imagen : "",

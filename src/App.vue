@@ -4,7 +4,7 @@
 <template>
 
     <header>
-        <img src="../src/assets/LOGO.png" alt="Logo de CompraGo" />
+        <img src="../src/assets/Designer (1).png" alt="Logo de CompraGo" />
 
         <nav>
             <RouterLink to="/">Inicio</RouterLink>

@@ -72,7 +72,11 @@ export const useProductosStore = defineStore('productos', {
     actions: {
 
         agregarProducto(producto) {
-            this.productos.push(producto)
+            const productoNuevo = {
+                id: Date.now(),
+                ...producto
+            }
+            this.productos.push(productoNuevo)
         },
 
         eliminarProducto(id) {
@@ -86,6 +90,11 @@ export const useProductosStore = defineStore('productos', {
                 Object.assign(productoEncontrado, nuevosDatos)
             }
 
+        }, 
+
+        encontrarProducto(id) {
+            let productoEncontrado = this.productos.find(producto => producto.id === id)
+            return productoEncontrado
         }
 
     }
